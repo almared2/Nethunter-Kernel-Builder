@@ -1,9 +1,9 @@
 [  {
     "kernelSource": {
-      "name": "MikasaNethunter",
-      "repo": "https://github.com/noophyy/mikasa_kernel_realme2_c1.git",
-      "branch": "Light",
-      "device": "mikasa"
+      "name": "marbleNethunter",
+      "repo": "https://github.com/Evolution-X-Devices/kernel_xiaomi_sm8450.git",
+      "branch": "cnb",
+      "device": "marble"
     },
     "withKernelSU": false,
     "toolchains": [
@@ -13,13 +13,14 @@
         "name": "gas"
       },
       {
-        "repo": "https://github.com/kdrag0n/proton-clang.git",
-        "branch": "master",
+        "repo": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86",
+        "branch": "master-kernel-build-2021",
         "name": "clang"
       }
     ],
     "params": {
       "ARCH": "arm64",
+      "DEFCONFIG": "gki_defconfig",
       "CROSS_COMPILE": "aarch64-linux-gnu-",
       "CROSS_COMPILE_ARM32": "arm-linux-gnueabi-",
       "CROSS_COMPILE_COMPAT": "arm-linux-gnueabi-",
